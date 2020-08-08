@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "address",
+  "info": {
+    "name": "address"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "user": {
+      "via": "addresses",
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "streetName": {
+      "type": "text"
+    },
+    "suite": {
+      "type": "text"
+    },
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    }
+  }
+}
