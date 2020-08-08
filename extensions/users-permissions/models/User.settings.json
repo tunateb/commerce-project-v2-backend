@@ -54,8 +54,8 @@
       "configurable": false
     },
     "cart": {
-      "model": "cart",
-      "via": "user"
+      "via": "user",
+      "model": "cart"
     },
     "addresses": {
       "collection": "address",
@@ -72,6 +72,10 @@
     },
     "fullname": {
       "type": "string"
+    },
+    "purchases": {
+      "via": "user",
+      "collection": "purchase"
     }
   }
 }

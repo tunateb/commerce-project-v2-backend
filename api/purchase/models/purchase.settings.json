@@ -1,21 +1,25 @@
 {
   "kind": "collectionType",
-  "collectionName": "carts",
+  "collectionName": "purchase",
   "info": {
-    "name": "cart"
+    "name": "purchase"
   },
   "options": {
     "increments": true,
     "timestamps": true
   },
   "attributes": {
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "delivered",
+        "ordered"
+      ]
+    },
     "user": {
       "plugin": "users-permissions",
       "model": "user",
-      "via": "cart"
-    },
-    "orders": {
-      "collection": "order"
+      "via": "purchases"
     }
   }
 }

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order",
+  "info": {
+    "name": "order"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "product": {
+      "model": "product"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "quantity": {
+      "type": "integer",
+      "min": 1,
+      "required": false
+    }
+  }
+}
