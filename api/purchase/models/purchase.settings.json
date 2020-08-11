@@ -14,12 +14,35 @@
       "enum": [
         "delivered",
         "ordered"
-      ]
+      ],
+      "default": "ordered"
     },
     "user": {
       "plugin": "users-permissions",
       "model": "user",
       "via": "purchases"
+    },
+    "address": {
+      "model": "address"
+    },
+    "cart": {
+      "model": "cart"
+    },
+    "cardNumber": {
+      "type": "string",
+      "required": true
+    },
+    "cardName": {
+      "type": "string",
+      "required": true
+    },
+    "cvc": {
+      "type": "string",
+      "required": true
+    },
+    "expDate": {
+      "type": "string",
+      "required": true
     }
   }
 }
