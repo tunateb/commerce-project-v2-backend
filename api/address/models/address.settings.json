@@ -10,9 +10,9 @@
   },
   "attributes": {
     "user": {
-      "via": "addresses",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "addresses"
     },
     "streetName": {
       "type": "text"
@@ -24,6 +24,9 @@
       "type": "string"
     },
     "country": {
+      "type": "string"
+    },
+    "name": {
       "type": "string"
     }
   }

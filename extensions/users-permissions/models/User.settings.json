@@ -54,12 +54,12 @@
       "configurable": false
     },
     "cart": {
-      "via": "user",
-      "model": "cart"
+      "model": "cart",
+      "via": "user"
     },
     "addresses": {
-      "collection": "address",
-      "via": "user"
+      "via": "user",
+      "collection": "address"
     },
     "avatar": {
       "model": "file",
@@ -74,8 +74,11 @@
       "type": "string"
     },
     "purchases": {
-      "via": "user",
-      "collection": "purchase"
+      "collection": "purchase",
+      "via": "user"
+    },
+    "phoneNumber": {
+      "type": "biginteger"
     }
   }
 }
